@@ -1,3 +1,4 @@
+tries = 1
 name = raw_input("What's your name?").capitalize()
 print "Hello " + name
 maxnum = input("Whats the largest number you'd like to guess from?")
@@ -8,10 +9,13 @@ answer = random.randint(1,maxnum)
 
 while userAnswer != answer:
     if userAnswer > answer:
-        print "too high!"
+        print "too high " + name + "!"
+        tries = tries + 1
     elif userAnswer < answer:
-        print "too low!"
-
+        print "too low " + name + "!"
+        tries = tries + 1
     userAnswer = input("Guess again?")
-print answer
-#tell user if theyre correct or not
+    if userAnswer == answer:
+        print "You got it right!!"
+print str(answer) + " is the answer!"
+print "It took you " + str(tries) + " tries!"
