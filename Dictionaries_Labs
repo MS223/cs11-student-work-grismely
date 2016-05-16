@@ -1,0 +1,15 @@
+user_profile = {
+'name':'Grismely H.',
+'school':'The Lab School of Finance and Tech',
+'birthday':'07/16',
+'email':'grismely.hiraldo@ms223.org',
+'username(s)':'insertsomenamehere',
+'where are you from?': 'an island'
+'number of siblings':'2',
+'skills':'I draw sometimes',
+'favorite movie':'Howls Moving Castle',
+'favorite musicians' : 'Led Zeppelin and J.Cole',
+'favorite TV show' :'The Boondocks and Supernatural',
+'favorite book' : 'Fight Club and Norwegian Wood and Reading Lolita iN Tehran'
+}
+print user_profile['name']
