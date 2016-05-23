@@ -12,17 +12,22 @@ days_of_week = {
 
 }
 
-# days_of_week[day].append(action)
-# print days_of_week
-
-def update():
+def add():
+    action = raw_input("What are you doing?")
+    day = raw_input("What day?").capitalize()
     while action != 'nothing':
-        action = raw_input("What are you doing?")
-        day = raw_input("What day?").capitalize()
+        days_of_week[day].append(action)
+    print days_of_week
 
-days_of_week[day].append(action)
+add()
+
+
 #
-#     #shuld get our action variable and add it yo our dictionary days_of_week with the key day
+# def get(day):
+#     print days_of_week[day]
 #
-# days[day] = action
-# print days_of_week
+# def choice():
+#     user_choice = raw_input("What do you need?")
+#     if user_choice == 'get':
+#         print day
+#         def()
