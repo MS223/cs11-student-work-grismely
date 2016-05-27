@@ -1,0 +1,9 @@
+class Pet(object):
+    def __init__(self, name):
+        self.name = name
+
+my_pet = Pet("Nymeria")
+print my_pet.name
+#1. __init__ most likely sets up something
+#2. If you wanted to initialize all pet objects with a name and color you'd be giving them this value before hand
+#3.You would most likely need to add the parameter 'color' to the function and then give it a value when defining the varibale 'my_pet'
