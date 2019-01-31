@@ -3,7 +3,7 @@
 #     print number
 #     number = number - 1
 # print "Boom!"
-x = input("number?")
+x = int(input("number?"))
 while x > 0:
 #condition, want ocuntdown to stop before 0 therefore as long as x is not 0 code will run
     print x
